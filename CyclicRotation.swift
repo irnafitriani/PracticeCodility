@@ -14,7 +14,7 @@ public func solution(_ A : inout [Int], _ K : Int) -> [Int] {
     }
 
     if K > A.count {
-        rotate = K - A.count
+        rotate = K % A.count
     }
 
     for i in 0...A.count-1 {
